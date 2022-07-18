@@ -1,0 +1,1 @@
+ npx  node-static  -c-1
