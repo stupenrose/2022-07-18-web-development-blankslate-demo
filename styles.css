@@ -1,11 +1,17 @@
 
 body {
     background-size: cover;
-    background-image:url('race.gif');
+    background-image:url('zomming-away.gif');
     
 }
 
 .stuff-panel{
     background: #808080b8;
     padding:20px;
+}
+
+.person {
+    position: fixed;
+    bottom: 0px;
+    left:calc(50vw)
 }
