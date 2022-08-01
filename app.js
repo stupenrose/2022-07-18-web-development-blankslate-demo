@@ -80,16 +80,19 @@ holler.onLoad(()=>{
     }
 
     const doNextFrame = ()=>{
-        let oldPosition = position
         position = position + velocity
         setPosition(player, position)
-
-        if(oldPosition!==position){
-            holler.appInstance.notifyClients(position + " " + playerSlot)
-        }
         setTimeout(doNextFrame)
     }
 
     doNextFrame()
+
+
+
+    const sendPosition = ()=>{
+        holler.appInstance.notifyClients(position + " " + playerSlot)
+        setTimeout(sendPosition, 100)
+    }
+    sendPosition()
 })
 
