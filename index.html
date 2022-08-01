@@ -1,29 +1,23 @@
 <html>
+    <script src="https://app.holler.fyi/sdk.js?appId=7ee2b028-d998-48e7-951b-a2b28f910c6f"></script>
     <link rel="stylesheet" href="styles.css"/>
-    <div class="stuff-panel">
+    <div class="loading-panel">
+        <img src="https://acegif.com/wp-content/uploads/loading-41.gif"/>
+    </div>
+    <div class="intro-panel" style="display:none;">
 
-        Intro: <input class="intro-field"/><button>Send</button>
-
-        <div class="response-to-send-message">
-            
-        </div>
-    
-        <hr/>
-        
-        <button class="stop-button">stop</button>
-        <button class="start-button">go</button>
+        <button class="choose-player-a-button">Player A</button>
+        <button class="choose-player-b-button">Player B</button>
         
         <div class="start-message">
-            Start message will appear here
         </div>
         
-        
-        <div class="end-message">
-            End message will appear here
-        </div>
     </div>
-    
-    <img class="person" src="https://www.mixamo.com/images/home-animate-liam.gif"/>
+    <div class="game-panel" style="display:none;">
+        <div class="user-name-area"></div>
+        <img class="person-a" src="man2.gif"/>
+        <img class="person-b" src="man1.gif"/>
+    </div>
 
 
     <script src="app.js"></script>
