@@ -11,12 +11,21 @@ body{
 }
 
 .intro-panel{
-    background: #808080b8;
+    /* background: #808080b8; */
     padding:20px;
 }
 
-.person-a, .person-b {
+.person {
     position: fixed;
     bottom: 0px;
     left:calc(50vw)
+}
+
+.character-option {
+    display:inline-block;
+    max-height: 200px;
+    border:1px solid white;
+}
+.character-option:hover {
+    border:1px solid grey;
 }
