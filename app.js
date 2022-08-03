@@ -74,7 +74,7 @@ holler.onLoad(()=>{
 
             otherPlayer.position = playerUpdate.position
             otherPlayer.velocity = playerUpdate.velocity
-            setPosition(otherPlayer)
+            movePlayerImage(otherPlayer)
         }
     })
 
@@ -101,7 +101,7 @@ holler.onLoad(()=>{
 
     }
 
-    function setPosition(player){
+    function movePlayerImage(player){
         if(player){
             player.image.style.left = player.position + "px"
         }
@@ -111,7 +111,7 @@ holler.onLoad(()=>{
         
         characters.forEach(character=>{
             character.position = character.position + character.velocity
-            setPosition(character)
+            movePlayerImage(character)
         })
 
         setTimeout(doNextFrame)
@@ -130,7 +130,7 @@ holler.onLoad(()=>{
                 imageName:player.imageName
             }))
         }
-        setTimeout(sendPosition, 10)
+        setTimeout(sendPosition, 100)
     }
     sendPosition()
 })
